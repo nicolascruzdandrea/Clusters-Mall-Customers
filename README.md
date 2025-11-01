@@ -31,11 +31,11 @@ Se aplican **tres modelos de clustering** con diferentes combinaciones de variab
 ### 3️⃣ Aplicación del Algoritmo K-Means
 Se entrenaron tres modelos distintos para observar cómo la estructura de los clusters cambia según las variables utilizadas:
 
-| Modelo | Variables Utilizadas | $k$ Óptimo | **Silhouette Score** | Descripción |
+| Modelo | Variables Utilizadas | Clusters Óptimos | **Silhouette Score** | Descripción |
 | :---: | :--- | :---: | :---: | :--- |
-| **🧩 Modelo 1** | **Annual Income** y **Spending Score** | 3 | **0.44** | Segmentación clásica que muestra la relación entre poder adquisitivo y el comportamiento de compra. |
-| **👥 Modelo 2** | **Age** y **Spending Score** | 5 | **0.56** | **¡El más robusto!** Muestra patrones definidos: jóvenes con mayor gasto y mayores con gasto moderado. |
-| **💼 Modelo 3** | **Age, Income** y **Spending Score** | 4 | **0.39** | Clusters con ligero solapamiento. Ofrece una visión tridimensional que es menos coherente. |
+| **Modelo 1** | **Annual Income** y **Spending Score** | 3 | **0.44** | Segmentación clásica que muestra la relación entre poder adquisitivo y el comportamiento de compra. |
+| **Modelo 2** | **Age** y **Spending Score** | 5 | **0.56** | **¡El más robusto!** Muestra patrones definidos: jóvenes con mayor gasto y mayores con gasto moderado. |
+| **Modelo 3** | **Age, Income** y **Spending Score** | 4 | **0.39** | Clusters con ligero solapamiento. Ofrece una visión tridimensional que es menos coherente. |
 
 ---
 
@@ -44,9 +44,10 @@ Se entrenaron tres modelos distintos para observar cómo la estructura de los cl
 * **Líder en Calidad (Modelo 2):** El Modelo 2 (Edad + Spending Score) presenta la **mejor cohesión y separación de grupos**, siendo el **más robusto estadísticamente** (Silhouette Score: **0.56**).
 * **Factor Determinante:** La combinación de **Edad y Puntuación de Gasto** es el factor más influyente en la segmentación de este *dataset*.
 * **Perfiles Identificados:**
-    * **Jóvenes** con **alto gasto**.
-    * **Adultos** con **gasto medio**.
-    * **Mayores** con **menor frecuencia de consumo** (gasto bajo).
+    * **Adultos** con **ingresos bajos y gasto bajo**.
+    * **Adultos** con **ingresos medios y gasto moderado**.
+    * **Jóvenes** con **ingresos altos y gasto alto**.
+    * **Jóvenes** con **ingresos bajos y gasto alto**.
 * **Recomendación Estratégica:** Dado el éxito del Modelo 2, la estrategia de marketing debe pivotar hacia el **ciclo de vida y las tendencias generacionales** para optimizar la personalización y la oferta de servicios.
 
 ---
