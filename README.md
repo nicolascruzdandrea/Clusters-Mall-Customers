@@ -41,15 +41,14 @@ Se entrenaron tres modelos distintos para observar cómo la estructura de los cl
 
 ## 📊 Resultados e Insights Clave
 
-* **Líder en Calidad (Modelo 2):** El Modelo 2 (Edad + Spending Score) presenta la **mejor cohesión y separación de grupos**, siendo el **más robusto estadísticamente** (Silhouette Score: **0.56**).
-* **Factor Determinante:** La combinación de **Edad y Puntuación de Gasto** es el factor más influyente en la segmentación de este *dataset*.
+* **Líder en Calidad (Modelo 2):** El Modelo 2 (Annual Income + Spending Score) presenta la **mejor cohesión y separación de grupos**, siendo el **más robusto estadísticamente** (Silhouette Score: **0.56**).
+* **Factor Determinante:** La combinación de **Ingreso Anual y Puntuación de Gasto** es el factor más influyente en la segmentación de este *dataset*.
 * **Perfiles Identificados:**
     * **Adultos** con **ingresos bajos y gasto bajo**.
     * **Adultos** con **ingresos medios y gasto moderado**.
     * **Jóvenes** con **ingresos altos y gasto alto**.
     * **Jóvenes** con **ingresos bajos y gasto alto**.
     * **Adultos** con **ingresos altos y gasto muy bajo**
-* **Recomendación Estratégica:** Dado el éxito del Modelo 2, la estrategia de marketing debe pivotar hacia el **ciclo de vida y las tendencias generacionales** para optimizar la personalización y la oferta de servicios.
 
 ---
 
