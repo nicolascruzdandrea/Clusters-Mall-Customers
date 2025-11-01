@@ -33,11 +33,10 @@ Se entrenaron tres modelos distintos para observar cómo la estructura de los cl
 
 | Modelo | Variables Utilizadas | Clusters Óptimos | **Silhouette Score** | Descripción |
 | :---: | :--- | :---: | :---: | :--- |
-| **Modelo 1** | **Annual Income** y **Spending Score** | 3 | **0.44** | Segmentación clásica que muestra la relación entre poder adquisitivo y el comportamiento de compra. |
-| **Modelo 2** | **Age** y **Spending Score** | 5 | **0.56** | **¡El más robusto!** Muestra patrones definidos: jóvenes con mayor gasto y mayores con gasto moderado. |
+| **Modelo 1** | **Age** y **Spending Score** | 3 | **0.44** | Muestra patrones definidos: jóvenes con mayor gasto y mayores con gasto moderado. |
+| **Modelo 2** | **Annual Income** y **Spending Score** | 5 | **0.56** | **¡El más robusto!** Segmentación clásica que muestra la relación entre poder adquisitivo y el comportamiento de compra. |
 | **Modelo 3** | **Age, Income** y **Spending Score** | 4 | **0.39** | Clusters con ligero solapamiento. Ofrece una visión tridimensional que es menos coherente. |
 
----
 
 ## 📊 Resultados e Insights Clave
 
