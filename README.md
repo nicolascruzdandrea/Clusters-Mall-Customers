@@ -48,6 +48,7 @@ Se entrenaron tres modelos distintos para observar cómo la estructura de los cl
     * **Adultos** con **ingresos medios y gasto moderado**.
     * **Jóvenes** con **ingresos altos y gasto alto**.
     * **Jóvenes** con **ingresos bajos y gasto alto**.
+    * **Adultos** con **ingresos altos y gasto muy bajo**
 * **Recomendación Estratégica:** Dado el éxito del Modelo 2, la estrategia de marketing debe pivotar hacia el **ciclo de vida y las tendencias generacionales** para optimizar la personalización y la oferta de servicios.
 
 ---
