@@ -43,11 +43,11 @@ Se entrenaron tres modelos distintos para observar cómo la estructura de los cl
 * **Líder en Calidad (Modelo 2):** El Modelo 2 (Annual Income + Spending Score) presenta la **mejor cohesión y separación de grupos**, siendo el **más robusto estadísticamente** (Silhouette Score: **0.56**).
 * **Factor Determinante:** La combinación de **Ingreso Anual y Puntuación de Gasto** es el factor más influyente en la segmentación de este *dataset*.
 * **Perfiles Identificados:**
-    * **Adultos** con **ingresos bajos y gasto bajo**.
-    * **Adultos** con **ingresos medios y gasto moderado**.
-    * **Jóvenes** con **ingresos altos y gasto alto**.
-    * **Adultos** con **ingresos altos y gasto muy bajo**.
-    * **Jóvenes** con **ingresos bajos y gasto alto**.
+    * **Adulto** con **ingreso medio y gasto moderado**.
+    * **Adulto** con **ingreso bajo y gasto bajo**.
+    * **Joven-Adulto** con **ingreso alto y gasto alto**.
+    * **Adulto** con **ingresos alto y gasto muy bajo**. 
+    * **Joven** con **ingreso bajo y gasto alto**.
    
 
 ---
