@@ -1,4 +1,4 @@
-# 🛍️ README: Segmentación de Clientes con K-Means Clustering
+# 🛍️ Segmentación de Clientes con K-Means Clustering
 
 ## 📋 Descripción General del Proyecto
 
