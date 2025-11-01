@@ -47,7 +47,7 @@ Se entrenaron tres modelos distintos para observar cómo la estructura de los cl
     * **Adultos** con **ingresos medios y gasto moderado**.
     * **Jóvenes** con **ingresos altos y gasto alto**.
     * **Jóvenes** con **ingresos bajos y gasto alto**.
-    * **Adultos** con **ingresos altos y gasto muy bajo**
+    * **Adultos** con **ingresos altos y gasto muy bajo**.
 
 ---
 
