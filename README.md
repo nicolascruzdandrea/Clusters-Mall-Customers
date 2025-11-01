@@ -26,7 +26,7 @@ Se aplican **tres modelos de clustering** con diferentes combinaciones de variab
 
 ### 2️⃣ Preparación de los Datos
 * **Estandarización** de las variables con `StandardScaler` para asegurar la igualdad de escala.
-* Selección del número de clusters óptimo ($k$) mediante el **Método del Codo (Elbow Method)**.
+* Selección del número de clusters óptimo ($k$) mediante el **Método del Codo**.
 
 ### 3️⃣ Aplicación del Algoritmo K-Means
 Se entrenaron tres modelos distintos para observar cómo la estructura de los clusters cambia según las variables utilizadas:
@@ -54,7 +54,7 @@ Se entrenaron tres modelos distintos para observar cómo la estructura de los cl
 
 ## 🧰 Tecnologías Utilizadas
 
-* **Python 3**
+* **Python**
 * **Pandas / NumPy** (Manipulación de datos)
 * **Matplotlib / Seaborn** (Visualización)
 * **Scikit-learn** (Implementación de K-Means)
