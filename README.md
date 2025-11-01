@@ -1,90 +1,65 @@
-📘 README — Segmentación con K-Means
-📋 Descripción general
+# 🛍️ README: Segmentación de Clientes con K-Means Clustering
 
-Este proyecto realiza un análisis exploratorio y segmentación de clientes utilizando el algoritmo K-Means Clustering, con el propósito de identificar patrones de comportamiento y perfiles diferenciados en función de variables demográficas y de gasto.
+## 📋 Descripción General del Proyecto
 
-Se aplican tres modelos de clustering con diferentes combinaciones de variables para comparar resultados y evaluar cuál genera una segmentación más coherente y útil para la toma de decisiones.
+Este proyecto implementa un análisis exploratorio y de segmentación de clientes utilizando el algoritmo **K-Means Clustering**. El objetivo principal es identificar patrones de comportamiento y perfiles diferenciados en función de variables demográficas (**Edad**) y de consumo (**Ingresos** y **Gasto**).
 
-🎯 Objetivos
+Se aplican **tres modelos de clustering** con diferentes combinaciones de variables para comparar resultados y evaluar cuál genera la segmentación más coherente y útil para la toma de decisiones empresariales.
 
-Analizar y preparar los datos para un correcto modelado con K-Means.
+---
 
-Evaluar distintas combinaciones de variables para determinar los factores más relevantes en la segmentación.
+## 🎯 Objetivos Principales
 
-Identificar grupos de clientes con características y comportamientos diferenciados.
+* **Analizar y Preparar** los datos para un correcto modelado con K-Means.
+* **Evaluar** distintas combinaciones de variables para determinar los factores más relevantes en la segmentación.
+* **Identificar** grupos de clientes con características y comportamientos diferenciados (clusters).
+* **Generar Insights** que apoyen estrategias de marketing, fidelización o personalización de servicios.
 
-Comparar el rendimiento de los modelos mediante la métrica Silhouette Score.
+---
 
-Generar insights que apoyen estrategias de marketing, fidelización o personalización de servicios.
+## ⚙️ Metodología Aplicada
 
-⚙️ Metodología
-1️⃣ Exploración inicial del dataset
+### 1️⃣ Exploración Inicial del Dataset
+* Revisión de la estructura, tipos de datos y valores nulos.
+* Análisis descriptivo de variables numéricas: distribución, valores atípicos y correlaciones.
+* Visualizaciones iniciales (histogramas y gráficos de dispersión).
 
-Revisión de la estructura, tipos de datos y valores nulos.
+### 2️⃣ Preparación de los Datos
+* **Estandarización** de las variables con `StandardScaler` para asegurar la igualdad de escala.
+* Selección del número de clusters óptimo ($k$) mediante el **Método del Codo (Elbow Method)**.
 
-Análisis descriptivo de variables numéricas: distribución, valores atípicos y correlaciones.
+### 3️⃣ Aplicación del Algoritmo K-Means
+Se entrenaron tres modelos distintos para observar cómo la estructura de los clusters cambia según las variables utilizadas:
 
-Visualizaciones iniciales con histogramas y gráficos de dispersión.
+| Modelo | Variables Utilizadas | $k$ Óptimo | **Silhouette Score** | Descripción |
+| :---: | :--- | :---: | :---: | :--- |
+| **🧩 Modelo 1** | **Annual Income** y **Spending Score** | 3 | **0.44** | Segmentación clásica que muestra la relación entre poder adquisitivo y el comportamiento de compra. |
+| **👥 Modelo 2** | **Age** y **Spending Score** | 5 | **0.56** | **¡El más robusto!** Muestra patrones definidos: jóvenes con mayor gasto y mayores con gasto moderado. |
+| **💼 Modelo 3** | **Age, Income** y **Spending Score** | 4 | **0.39** | Clusters con ligero solapamiento. Ofrece una visión tridimensional que es menos coherente. |
 
-2️⃣ Preparación de los datos
+---
 
-Estandarización de las variables con StandardScaler para asegurar igualdad de escala.
+## 📊 Resultados e Insights Clave
 
-Selección del número de clusters óptimo mediante el método del codo (Elbow Method).
+* **Líder en Calidad (Modelo 2):** El Modelo 2 (Edad + Spending Score) presenta la **mejor cohesión y separación de grupos**, siendo el **más robusto estadísticamente** (Silhouette Score: **0.56**).
+* **Factor Determinante:** La combinación de **Edad y Puntuación de Gasto** es el factor más influyente en la segmentación de este *dataset*.
+* **Perfiles Identificados:**
+    * **Jóvenes** con **alto gasto**.
+    * **Adultos** con **gasto medio**.
+    * **Mayores** con **menor frecuencia de consumo** (gasto bajo).
+* **Recomendación Estratégica:** Dado el éxito del Modelo 2, la estrategia de marketing debe pivotar hacia el **ciclo de vida y las tendencias generacionales** para optimizar la personalización y la oferta de servicios.
 
-3️⃣ Aplicación del algoritmo K-Means
+---
 
-Se entrenan tres modelos distintos para observar cómo cambia la estructura de los clusters según las variables utilizadas.
+## 🧰 Tecnologías Utilizadas
 
-🔍 Modelos de Clustering
-🧩 Modelo 1: Segmentación por Ingresos y Puntuación de Gastos
+* **Python 3**
+* **Pandas / NumPy** (Manipulación de datos)
+* **Matplotlib / Seaborn** (Visualización)
+* **Scikit-learn** (Implementación de K-Means)
 
-Variables utilizadas: Annual Income (k$) y Spending Score (1-100)
+---
 
-Número de clusters óptimo: 3
+## 🧠 Conclusiones del Proyecto
 
-Silhouette Score: 0.44
-📊 Este modelo permite identificar tres grupos principales de clientes según su nivel de ingresos y hábitos de gasto. Es una segmentación clásica que muestra la relación entre poder adquisitivo y comportamiento de compra.
-
-👥 Modelo 2: Segmentación por Edad y Puntuación de Gastos
-
-Variables utilizadas: Age y Spending Score (1-100)
-
-Número de clusters óptimo: 5
-
-Silhouette Score: 0.56
-📈 En este modelo se observan patrones más definidos: los clientes más jóvenes tienden a tener una mayor puntuación de gasto, mientras que los de mayor edad presentan un comportamiento más moderado. Este modelo logra la mejor separación de grupos según el Silhouette Score.
-
-💼 Modelo 3: Segmentación por Edad, Ingresos y Puntuación de Gastos
-
-Variables utilizadas: Age, Annual Income (k$) y Spending Score (1-100)
-
-Número de clusters óptimo: 4
-
-Silhouette Score: 0.39
-📉 Aunque incluye más variables, los clusters se solapan ligeramente. Aun así, este modelo ofrece una visión tridimensional del comportamiento del cliente, integrando variables demográficas y económicas.
-
-📊 Resultados e Insights
-
-El Modelo 2 (Edad + Spending Score) presenta la mejor cohesión y separación de grupos. Este modelo, con un Silhouette Score de 0.56 y 5 clusters, es el más robusto estadísticamente.
-
-Los clusters permiten identificar perfiles distintos: jóvenes con alto gasto, adultos de gasto medio y mayores con menor frecuencia de consumo.
-
-La combinación de edad y comportamiento de compra es el factor más determinante en la segmentación. Son las dos variables más influyentes y con la relación más limpia y diferenciadora en este conjunto de datos.
-
-El análisis ofrece información clave para acciones de marketing segmentado, estrategias de precios o optimización de experiencias personalizadas. Dado el éxito del Modelo 2, la estrategia de marketing debe pivotar hacia el ciclo de vida y las tendencias generacionales.
-
-🧰 Tecnologías utilizadas
-
-Python 3
-
-Pandas / NumPy
-
-Matplotlib / Seaborn
-
-Scikit-learn
-
-🧠 Conclusiones
-
-Este ejercicio demuestra cómo la elección de variables impacta directamente en la estructura de los clusters.
-La comparación entre modelos permite seleccionar el enfoque más coherente para describir los diferentes tipos de clientes y respaldar decisiones estr
+Este ejercicio demuestra que la **elección de variables impacta directamente en la estructura de los clusters**. La comparación entre modelos nos permitió seleccionar el enfoque más **coherente y accionable** (Modelo 2) para describir los diferentes tipos de clientes y respaldar decisiones estratégicas basadas en datos de alto valor predictivo.
